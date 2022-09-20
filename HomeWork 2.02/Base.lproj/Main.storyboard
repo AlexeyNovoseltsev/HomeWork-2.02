@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,46 +13,12 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HomeWork_2_02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HFV-yZ-rFI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="dqI-GC-LjY">
-                                <rect key="frame" x="132" y="175" width="150" height="484"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="o7a-ux-2k1">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="484"/>
-                                        <subviews>
-                                            <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="HTO-bs-eLP">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <color key="backgroundColor" systemColor="systemPinkColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="HTO-bs-eLP" secondAttribute="height" multiplier="1:1" id="YDS-Mu-bqN"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="wJY-XI-ccw">
-                                                <rect key="frame" x="0.0" y="167" width="150" height="150"/>
-                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="wJY-XI-ccw" secondAttribute="height" multiplier="1:1" id="Icf-5h-qts"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="c0e-a7-PaO">
-                                                <rect key="frame" x="0.0" y="334" width="150" height="150"/>
-                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="c0e-a7-PaO" secondAttribute="height" multiplier="1:1" id="Seg-pE-0l1"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sli-lO-9nN">
-                                <rect key="frame" x="132" y="778" width="150" height="34"/>
+                                <rect key="frame" x="132" y="814" width="166" height="34"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Sli-lO-9nN" secondAttribute="height" multiplier="75:17" id="kcj-Uc-laY"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Start"/>
@@ -60,16 +26,36 @@
                                     <action selector="settingLight" destination="BYZ-38-t0r" eventType="touchUpInside" id="JPJ-zA-cR9"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="o7a-ux-2k1">
+                                <rect key="frame" x="136.33333333333331" y="158.99999999999997" width="157.33333333333331" height="505.33333333333326"/>
+                                <subviews>
+                                    <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="HTO-bs-eLP">
+                                        <rect key="frame" x="0.0" y="0.0" width="157.33333333333334" height="157"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="HTO-bs-eLP" secondAttribute="height" multiplier="1:1" id="6m1-eg-sh3"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="wJY-XI-ccw">
+                                        <rect key="frame" x="0.0" y="174" width="157.33333333333334" height="157.33333333333337"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    </view>
+                                    <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="c0e-a7-PaO">
+                                        <rect key="frame" x="0.0" y="348.33333333333331" width="157.33333333333334" height="157"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iSQ-Td-Ou6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="iSQ-Td-Ou6" firstAttribute="trailing" secondItem="dqI-GC-LjY" secondAttribute="trailing" constant="132" id="Bgw-CQ-2X3"/>
-                            <constraint firstItem="iSQ-Td-Ou6" firstAttribute="trailing" secondItem="Sli-lO-9nN" secondAttribute="trailing" constant="132" id="IU6-tk-DAq"/>
-                            <constraint firstItem="Sli-lO-9nN" firstAttribute="leading" secondItem="iSQ-Td-Ou6" secondAttribute="leading" constant="132" id="hpC-Ql-S2W"/>
-                            <constraint firstItem="dqI-GC-LjY" firstAttribute="leading" secondItem="iSQ-Td-Ou6" secondAttribute="leading" constant="132" id="ulv-Yl-8LF"/>
+                            <constraint firstItem="Sli-lO-9nN" firstAttribute="centerX" secondItem="HFV-yZ-rFI" secondAttribute="centerX" id="CIb-es-qTf"/>
+                            <constraint firstItem="o7a-ux-2k1" firstAttribute="top" secondItem="iSQ-Td-Ou6" secondAttribute="top" constant="100" id="mER-9s-7WW"/>
+                            <constraint firstItem="Sli-lO-9nN" firstAttribute="width" secondItem="HFV-yZ-rFI" secondAttribute="height" multiplier="83:466" id="pUS-Uv-Obx"/>
+                            <constraint firstItem="o7a-ux-2k1" firstAttribute="centerX" secondItem="HFV-yZ-rFI" secondAttribute="centerX" id="r9X-5f-VnJ"/>
+                            <constraint firstItem="o7a-ux-2k1" firstAttribute="height" secondItem="HFV-yZ-rFI" secondAttribute="height" multiplier="0.542254" id="sSB-hH-z8T"/>
                             <constraint firstItem="iSQ-Td-Ou6" firstAttribute="bottom" secondItem="Sli-lO-9nN" secondAttribute="bottom" constant="50" id="vlp-qA-YeR"/>
-                            <constraint firstItem="dqI-GC-LjY" firstAttribute="top" secondItem="iSQ-Td-Ou6" secondAttribute="top" constant="127" id="w7x-rn-4QY"/>
                         </constraints>
                     </view>
                     <connections>
@@ -81,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1035" y="-68"/>
+            <point key="canvasLocation" x="-1680" y="-250"/>
         </scene>
     </scenes>
     <resources>
